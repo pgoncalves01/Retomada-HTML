@@ -1,4 +1,4 @@
-Claro! Abaixo está um exemplo de código HTML com CSS embutido para uma página sobre o Corinthians:
+Claro! Vou adicionar imagens de pratos típicos de comida italiana ao lado dos checkboxes. Aqui está o código HTML modificado:
 
 ```html
 <!DOCTYPE html>
@@ -6,25 +6,65 @@ Claro! Abaixo está um exemplo de código HTML com CSS embutido para uma página
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corinthians</title>
+    <title>Comida Italiana</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f2f2f2;
         }
         header {
-            background-color: black;
+            background-color: #E64A19;
             color: white;
             padding: 20px;
             text-align: center;
         }
         section {
             padding: 20px;
-            text-align: justify;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        h2 {
+            color: #E64A19;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #E64A19;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-self: flex-start;
+        }
+        button:hover {
+            background-color: #FF5722;
         }
         footer {
-            background-color: black;
+            background-color: #E64A19;
             color: white;
             text-align: center;
             padding: 10px;
@@ -36,21 +76,46 @@ Claro! Abaixo está um exemplo de código HTML com CSS embutido para uma página
 </head>
 <body>
     <header>
-        <h1>Corinthians</h1>
+        <h1>Comida Italiana</h1>
     </header>
 
     <section>
-        <p>O Sport Club Corinthians Paulista, conhecido popularmente como Corinthians, é um dos maiores clubes de futebol do Brasil. Fundado em 1º de setembro de 1910, o clube tem sua sede na cidade de São Paulo.</p>
-        <p>O Corinthians possui uma vasta história de conquistas, incluindo diversos títulos estaduais, nacionais e internacionais. O clube manda seus jogos na Arena Corinthians, localizada no bairro de Itaquera, na zona leste de São Paulo.</p>
-        <p>O escudo do Corinthians é composto por uma âncora, uma bandeira do Brasil e as iniciais "SCP" (Sport Club Corinthians Paulista).</p>
-        <p>Alguns dos principais ídolos da história do Corinthians incluem Sócrates, Rivelino, Ronaldo Fenômeno, Tite, entre outros.</p>
+        <h2>Pratos Típicos</h2>
+        <form id="pratos-form">
+            <label>
+                <img src="pizza.jpg" alt="Pizza">
+                <input type="checkbox" id="pizza" name="prato" value="Pizza">
+                Pizza
+            </label><br>
+            <label>
+                <img src="pasta.jpg" alt="Pasta">
+                <input type="checkbox" id="pasta" name="prato" value="Pasta">
+                Pasta
+            </label><br>
+            <label>
+                <img src="risoto.jpg" alt="Risoto">
+                <input type="checkbox" id="risoto" name="prato" value="Risoto">
+                Risoto
+            </label><br>
+            <label>
+                <img src="lasanha.jpg" alt="Lasanha">
+                <input type="checkbox" id="lasanha" name="prato" value="Lasanha">
+                Lasanha
+            </label><br>
+            <label>
+                <img src="gnocchi.jpg" alt="Gnocchi">
+                <input type="checkbox" id="gnocchi" name="prato" value="Gnocchi">
+                Gnocchi
+            </label><br>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Corinthians. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Comida Italiana. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
 ```
 
-Este código cria uma página HTML simples com um cabeçalho, uma seção de informações sobre o Corinthians e um rodapé. O CSS embutido é usado para estilizar os elementos da página. Você pode personalizar o CSS conforme desejado para ajustar o estilo da página.
+Neste código, adicionei tags `<img>` dentro de cada `<label>`, que exibem as imagens dos pratos. Certifique-se de substituir os caminhos das imagens (`src`) pelos caminhos corretos das imagens que você deseja utilizar.
